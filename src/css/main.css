@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+:root {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+img {
+  max-width: 100%;
+  object-fit: fill;
+  background-color: #7f8fa6; }
+
+a {
+  text-decoration: none; }
+
+@keyframes aparecePerfil {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  25% {
+    opacity: 0.25;
+    transform: scale(0.5); }
+  50% {
+    opacity: 0.5;
+    transform: scale(1); }
+  75% {
+    opacity: 0.75;
+    transform: scale(1.025); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  main * + * {
+    margin-top: 1rem; }
+  main .perfil {
+    width: 100%;
+    animation: aparecePerfil 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    main .perfil figure {
+      flex-basis: 100%; }
+      main .perfil figure,
+      main .perfil figure figcaption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      main .perfil figure img {
+        width: 25vmin;
+        border: 0;
+        border-radius: 16px;
+        box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.75); }
+    main .perfil .tarjeta {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      main .perfil .tarjeta .contenido {
+        flex-basis: 25%;
+        padding: 0.5em 1em;
+        background: #e5e5e5;
+        border-radius: 12px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+  main .galeria {
+    width: 100%;
+    align-self: center;
+    animation: aparecePerfil 1s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 0.5em;
+    grid-auto-flow: dense;
+    align-items: start; }
+    main .galeria figure {
+      margin-top: 0; }
+      main .galeria figure img {
+        border-radius: 15px; }
+    @media screen and (min-width: 600px) {
+      main .galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 0.5em;
+        grid-auto-flow: dense;
+        align-items: start; }
+        main .galeria #img_2 {
+          grid-column: 2/ 4;
+          grid-row: 1 / 2; }
+        main .galeria #img_3 {
+          grid-column: 1/ 3;
+          grid-row: 2/ 3; }
+        main .galeria .sub_imagenes {
+          grid-column: 1/ 3;
+          grid-row: 2/ 3;
+          margin-top: 0;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+          grid-gap: 0.5em;
+          grid-auto-flow: dense;
+          align-items: start; }
+          main .galeria .sub_imagenes #img_3 {
+            grid-column: 1/ 3;
+            grid-row: 1/ 3; } }
+  @media screen and (min-width: 600px) and (min-width: 50em) {
+    main .galeria {
+      width: 100%; } }
+  main footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  @media screen and (min-width: 50em) {
+    main {
+      width: 70%; } }

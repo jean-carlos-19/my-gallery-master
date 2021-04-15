@@ -1,0 +1,4 @@
+footer {
+  width: 100%;
+  @include display_flex(row, center, center);
+}
