@@ -40,7 +40,7 @@
     <nav>
     <ul>
         <li><a href="https://piguavejc-my-gallery-master.onrender.com/" target="_blank"> ver demo </a></li>
-        <li><a href="" target="_blank"> ver solucion en github </a></li>
+        <li><a href="https://github.com/jean-carlos-19/my-gallery-master" target="_blank"> ver solucion en github </a></li>
         <li><a href="https://devchallenges.io/solutions/cpRwv6sIvvZqDQKnkDzM" target="_blank"> ver solucion en Devchallenge 
         </a></li>
         <li><a href="https://www.figma.com/proto/HHzg6Ywq8jamFTB0J4iXKM/my-gallery-challenge?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1"> ver diseños en figma </a></li>
