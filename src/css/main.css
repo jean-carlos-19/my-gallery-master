@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 :root {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  --color_fondo_imagen: rgba(50, 50, 50, 0.75);
+  --color_titulo: #333333;
+  font-family: Montserrat; }
 
 *,
 *::before,
@@ -13,10 +16,32 @@
 img {
   max-width: 100%;
   object-fit: fill;
-  background-color: #7f8fa6; }
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.9375rem 0 var(--color_fondo_imagen); }
 
 a {
   text-decoration: none; }
+
+h2 {
+  font-weight: bolder;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  text-align: center;
+  color: #4e5150; }
+
+h6 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #bdbdbd; }
+
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4e5150; }
 
 @keyframes aparecePerfil {
   0% {
@@ -35,7 +60,7 @@ a {
     opacity: 1;
     transform: scale(1); } }
 
-main {
+.contenedor {
   width: 100%;
   margin: 0 auto;
   padding: 1em;
@@ -43,94 +68,103 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start; }
-  main * + * {
+  .contenedor * + * {
     margin-top: 1rem; }
-  main .perfil {
+  .contenedor .perfil {
     width: 100%;
     animation: aparecePerfil 1s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
-    main .perfil figure {
+    .contenedor .perfil figure {
       flex-basis: 100%; }
-      main .perfil figure,
-      main .perfil figure figcaption {
+      .contenedor .perfil figure,
+      .contenedor .perfil figure figcaption {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center; }
-      main .perfil figure img {
-        width: 25vmin;
-        border: 0;
-        border-radius: 16px;
-        box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.75); }
-    main .perfil .tarjeta {
+      .contenedor .perfil figure img {
+        width: 25vmin; }
+    .contenedor .perfil .tarjeta {
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       align-items: center; }
-      main .perfil .tarjeta .contenido {
+      .contenedor .perfil .tarjeta .contenido {
         flex-basis: 25%;
         padding: 0.5em 1em;
         background: #e5e5e5;
-        border-radius: 12px;
+        border-radius: 0.75rem;
         margin-top: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center; }
-  main .galeria {
+  .contenedor .galeria {
     width: 100%;
     align-self: center;
     animation: aparecePerfil 1s ease-in-out;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(12.5rem, 1fr));
     grid-gap: 0.5em;
     grid-auto-flow: dense;
     align-items: start; }
-    main .galeria figure {
+    .contenedor .galeria figure {
       margin-top: 0; }
-      main .galeria figure img {
-        border-radius: 15px; }
-    @media screen and (min-width: 600px) {
-      main .galeria {
+    .contenedor .galeria img {
+      border-radius: 0.9375rem; }
+    .contenedor .galeria .sub_imagenes > * + * {
+      margin-top: 0.5em; }
+    @media screen and (min-width: 37.5rem) {
+      .contenedor .galeria {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-        grid-gap: 0.5em;
+        grid-template-rows: repeat(auto-fill, minmax(12.5rem, 1fr));
+        grid-gap: 1em;
         grid-auto-flow: dense;
         align-items: start; }
-        main .galeria #img_2 {
+        .contenedor .galeria #img_2 {
           grid-column: 2/ 4;
           grid-row: 1 / 2; }
-        main .galeria #img_3 {
+        .contenedor .galeria #img_3 {
           grid-column: 1/ 3;
           grid-row: 2/ 3; }
-        main .galeria .sub_imagenes {
+        .contenedor .galeria .sub_imagenes {
           grid-column: 1/ 3;
           grid-row: 2/ 3;
           margin-top: 0;
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-          grid-gap: 0.5em;
+          grid-template-rows: repeat(auto-fill, minmax(12.5rem, 1fr));
+          grid-gap: 1em;
           grid-auto-flow: dense;
           align-items: start; }
-          main .galeria .sub_imagenes #img_3 {
+          .contenedor .galeria .sub_imagenes #img_3 {
             grid-column: 1/ 3;
             grid-row: 1/ 3; } }
-  @media screen and (min-width: 600px) and (min-width: 50em) {
-    main .galeria {
+  @media screen and (min-width: 37.5rem) and (min-width: 50em) {
+    .contenedor .galeria {
       width: 100%; } }
-  main footer {
+  .contenedor footer {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; }
+    .contenedor footer p {
+      font-family: Montserrat;
+      text-align: center;
+      font-size: 1rem;
+      color: black;
+      line-height: 1.06688rem; }
+      .contenedor footer p a {
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--color_titulo); }
   @media screen and (min-width: 50em) {
-    main {
+    .contenedor {
       width: 70%; } }

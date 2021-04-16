@@ -13,3 +13,10 @@
   grid-auto-flow: dense;
   align-items: start;
 }
+@mixin estilo_texto($fuente, $alineamiento_texto, $tamano_fuente, $color, $interlineado) {
+  font-family: $fuente;
+  text-align: $alineamiento_texto;
+  font-size: $tamano_fuente;
+  color: $color;
+  line-height: $interlineado;
+}

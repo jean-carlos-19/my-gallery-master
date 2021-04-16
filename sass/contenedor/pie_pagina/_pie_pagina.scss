@@ -1,0 +1,13 @@
+footer {
+  width: 100%;
+  @include display_flex(row, center, center);
+  p {
+    @include estilo_texto(Montserrat, center, 1rem, rgb(0, 0, 0), 1.066875rem);
+
+    a {
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--color_titulo);
+    }
+  }
+}

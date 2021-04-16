@@ -1,18 +1,3 @@
 @import "./funciones";
 @import "./globales";
-
-main {
-  width: 100%;
-  margin: 0 auto;
-  padding: 1em;
-  @include display_flex(column, flex-start, flex-start);
-  * + * {
-    margin-top: 1rem;
-  }
-  @import "./perfil/perfil";
-  @import "./galeria/galeria";
-  @import "./pie_pagina";
-  @media screen and(min-width:50em) {
-    width: 70%;
-  }
-}
+@import "./contenedor/contenecor";

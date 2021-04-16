@@ -11,9 +11,6 @@
     }
     img {
       width: 25vmin;
-      border: 0;
-      border-radius: 16px;
-      box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.75);
     }
   }
   .tarjeta {
@@ -23,7 +20,7 @@
       flex-basis: 25%;
       padding: 0.5em 1em;
       background: #e5e5e5;
-      border-radius: 12px;
+      border-radius: 0.75rem;
       margin-top: 0;
       @include display_flex(column, space-between, center);
     }

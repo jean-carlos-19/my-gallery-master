@@ -3,7 +3,11 @@
 :root {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  --color_fondo_imagen: rgba(50, 50, 50, 0.75);
+  --color_titulo: #333333;
+  font-family: Montserrat;
 }
+
 *,
 *::before,
 *::after {
@@ -14,10 +18,32 @@
 img {
   max-width: 100%;
   object-fit: fill;
-  background-color: #7f8fa6;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.9375rem 0 var(--color_fondo_imagen);
 }
 a {
   text-decoration: none;
+}
+h2 {
+  font-weight: bolder;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  text-align: center;
+  color: #4e5150;
+}
+h6 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #bdbdbd;
+}
+h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #4e5150;
 }
 @keyframes aparecePerfil {
   0% {
