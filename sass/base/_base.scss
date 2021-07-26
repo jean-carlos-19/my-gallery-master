@@ -1,0 +1,21 @@
+:root {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+img {
+  max-width: 100%;
+  object-fit: fill;
+  border: 0;
+}
+a {
+  text-decoration: none;
+}

@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "sass": "node-sass -w sass -o src/css"
+    "sass": "node-sass -w sass -o src/css",
+    "prettier": "prettier -w ./*"
   }
 }

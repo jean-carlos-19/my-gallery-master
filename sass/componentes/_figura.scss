@@ -1,0 +1,26 @@
+.figura {
+  flex-basis: 100%;
+  @include display_flex(column, center, center);
+  & > * + * {
+    margin-top: 0.5rem;
+  }
+  .figura_imagen {
+    width: 25vmin;
+  }
+  .figura_descripcion {
+    @include display_flex(column, center, center);
+    & > * + * {
+      margin-top: 0.25rem;
+    }
+  }
+}
+@media screen and(min-width:50rem) {
+  .descripcion_titulo {
+    font-size: 1.5rem;
+    line-height: 1.81rem;
+  }
+  .descripcion_subtitulo {
+    font-size: 0.87rem;
+    line-height: 1.06rem;
+  }
+}
