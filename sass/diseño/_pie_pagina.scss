@@ -1,9 +1,10 @@
 .pie_pagina {
-  .pie_pagina_parrafo {
+  .parrafo_pie_pagina {
+    color: var(--color_secundario_gris_500);
     text-align: center;
-    color: var(color_secundario_gris_500);
-    .pie_pagina_enlace {
-      color: initial;
+    .enlace_pie_pagina {
+      color: inherit;
+      font-weight: bold;
     }
   }
 }

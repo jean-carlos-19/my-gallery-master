@@ -1,12 +1,16 @@
+@charset "utf-8";
+
 @import "resumenes/variables", "resumenes/mixins";
 
 //@import "proveedores/";
 
-@import "base/normalizar", "base/fuentes", "base/animaciones", "base/base", "base/ayudantes";
+@import "base/normalizar", "base/fuentes", "base/animaciones", "base/base",
+  "base/ayudantes";
 
 @import "diseño/perfil", "diseño/galeria", "diseño/pie_pagina";
 
-@import "componentes/figura", "componentes/informacion", "componentes/foto", "componentes/subimagenes";
+@import "componentes/figura", "componentes/informacion", "componentes/foto",
+  "componentes/subimagenes";
 
 @import "paginas/home";
 

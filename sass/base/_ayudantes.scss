@@ -1,42 +1,69 @@
-.parrafo,
-.enlace {
-  font-family: "Montserrat" sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.87rem;
-  line-height: 1.06rem;
-  text-transform: none;
-  color: var(--color_primario);
-}
-.enlace {
-  font-style: italic;
-  text-transform: capitalize;
-  font-weight: bolder;
-}
 .titulo {
   font-family: "Montserrat" sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 0.87rem;
-  line-height: 1.06rem;
+  font-size: var(--tamano_titulo_movil);
+  line-height: var(--interlineado_titulo_movil);
   text-align: center;
   color: var(--color_primario);
+
+  @media screen and(min-width:37.5rem) {
+    font-size: var(--tamano_titulo_escritorio);
+    line-height: var(--interlineaso_titulo_escritorio);
+  }
+}
+.titulo_2 {
+  font-family: "Montserrat" sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--tamano_titulo_2_movil);
+  line-height: var(--interlineado_titulo_2_movil);
+  text-align: center;
+  color: var(--color_primario);
+
+  @media screen and(min-width:37.5rem) {
+    font-size: var(--tamano_titulo_2_escritorio);
+    line-height: var(--interlineaso_titulo_escritorio);
+  }
 }
 .subtitulo {
   font-family: "Montserrat" sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 0.62rem;
-  line-height: 0.75rem;
+  font-size: var(--tamano_subtitulo_movil);
+  line-height: var(--interlineado_subtitulo_movil);
   text-align: center;
   color: var(--color_secundario_gris);
+
+  @media screen and(min-width:37.5rem) {
+    font-size: var(--tamano_subtitulo_escritorio);
+    line-height:var(--interlineado_subtitulo_escritorio);
+  }
 }
-.puntaje {
+.subtitulo_2 {
   font-family: "Montserrat" sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 0.75rem;
-  line-height: 0.93rem;
+  font-size: var(--tamano_subtitulo_2_movil);
+  line-height: var(--interlineado_subtitulo_2_movil);
   text-align: center;
+  color: var(--color_secundario_gris_400);
+  @media screen and(min-width:37.5rem) {
+    font-size: var(--tamano_subtitulo_2_escritorio);
+    line-height: var(--interlineado_subtitulo_2_escritorio);
+  }
+}
+.parrafo {
+  font-family: "Montserrat" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--tamano_parrafo_movil);
+  line-height: var(--interlineado_parrafo_movil);
+  text-transform: none;
   color: var(--color_primario);
+
+  @media screen and(min-width:37.5rem) {
+    //font-size: 0.87rem;
+    //line-height: 1.06rem;
+  }
 }

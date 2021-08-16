@@ -13,22 +13,5 @@
     & > * + * {
       margin-top: 10px;
     }
-    .contenido_subtitulo {
-      font-size: 0.87rem;
-      line-height: 1.06rem;
-      font-size: 0.75rem;
-      line-height: 0.93rem;
-      color: var(--color_secundario_gris_400);
-    }
-  }
-}
-@media screen and(min-width:50rem) {
-  .contenido_puntaje {
-    font-size: 1.12rem;
-    line-height: 1.37rem;
-  }
-  .contenido_subtitulo {
-    font-size: 0.87rem;
-    line-height: 1.06rem;
   }
 }
