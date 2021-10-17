@@ -1,14 +1,11 @@
 .home {
   max-width: var(--ancho_maximo);
-  padding: var(--relleno_home_movi);
   margin: 0 auto;
+  padding: var(--relleno_home);
+  height: 100vh;
   animation: apareceSitio 0.8s linear;
+  @include display_flex(column, center, center);
   & > * + * {
     margin-top: 1.5rem;
-  }
-}
-@media screen and(min-width:50rem) {
-  .home {
-    padding: var(--relleno_home_escritorio);
   }
 }

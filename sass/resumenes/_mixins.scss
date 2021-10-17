@@ -12,3 +12,54 @@
   grid-auto-flow: dense;
   align-items: start;
 }
+@mixin colores {
+  --color_primario: #4e5150;
+  --color_secundario_gris: #a9a9a9;
+  --color_secundario_gris_400: #bdbdbd;
+  --color_secundario_gris_500: #b9bdcf;
+}
+@mixin titulo_1 {
+  --tamano_titulo_1: #{$tamano_titulo_1_movil};
+  --interlineado_titulo_1: #{$interlineado_titulo_1_movil};
+  @media screen and (min-width: 37.5rem) {
+    --tamano_titulo_1: #{$tamano_titulo_1_escritorio};
+    --interlineaso_titulo_1: #{$interlineado_titulo_1_escritorio};
+  }
+}
+@mixin titulo_2 {
+  --tamano_titulo_2: #{$tamano_titulo_2_movil};
+  --interlineado_titulo_2: #{$interlineado_titulo_2_movil};
+  @media screen and (min-width: 37.5rem) {
+    --tamano_titulo_2: #{$tamano_titulo_2_escritorio};
+    --interlineado_titulo_2: #{$interlineado_titulo_2_escritorio};
+  }
+}
+@mixin subtitulo {
+  --tamano_subtitulo: #{$tamano_subtitulo_movil};
+  --interlineado_subtitulo: #{$interlineado_subtitulo_movil};
+  @media screen and (min-width: 37.5rem) {
+    --tamano_subtitulo: #{$tamano_subtitulo_escritorio};
+    --interlineado_subtitulo: #{$interlineado_subtitulo_escritorio};
+  }
+}
+@mixin subtitulo_2 {
+  --tamano_subtitulo_2: #{$tamano_subtitulo_2_movil};
+  --interlineado_subtitulo_2: #{$interlineado_subtitulo_2_movil};
+  @media screen and (min-width: 37.5rem) {
+    --tamano_subtitulo_2: #{$tamano_subtitulo_2_escritorio};
+    --interlineado_subtitulo_2: #{$interlineado_subtitulo_2_escritorio};
+  }
+}
+@mixin parrafo {
+  --tamano_parrafo: #{$tamano_titulo_movil};
+  --interlineado_parrafo: #{$interlineado_titulo_movil};
+}
+@mixin relleno {
+  --relleno_home: 1.25rem 0.93rem; /* 20/16 , 15/16 */
+  @media screen and (min-width: 37.5rem) {
+    --relleno_home: 1.56rem 13.68rem; /* 25/16 , 219/16 */
+  }
+}
+@mixin ancho {
+  --ancho_maximo: 90rem; /*1440/16*/
+}

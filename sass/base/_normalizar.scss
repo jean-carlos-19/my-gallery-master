@@ -1,0 +1,25 @@
+:root {
+  /*
+movil:(x=375,y=717)
+excritorio:(x=1440,y=1577)
+*/
+  @include colores();
+  @include titulo_1();
+  @include titulo_2();
+  @include subtitulo();
+  @include subtitulo_2();
+  @include parrafo();
+  @include relleno();
+  @include ancho();
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}

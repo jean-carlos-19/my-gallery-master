@@ -1,0 +1,43 @@
+.titulo_1 {
+  font-size: var(--tamano_titulo);
+  line-height: var(--interlineado_titulo);
+  text-align: center;
+  color: var(--color_primario);
+
+  @media screen and(min-width:37.5rem) {
+    font-size: var(--tamano_titulo);
+    line-height: var(--interlineaso_titulo);
+  }
+}
+.titulo_2 {
+  font-size: var(--tamano_titulo_2);
+  line-height: var(--interlineado_titulo_2);
+  text-align: center;
+  color: var(--color_primario);
+
+  @media screen and(min-width:37.5rem) {
+    font-size: var(--tamano_titulo_2);
+    line-height: var(--interlineaso_titulo);
+  }
+}
+.subtitulo {
+  font-size: var(--tamano_subtitulo);
+  line-height: var(--interlineado_subtitulo);
+  text-align: center;
+  color: var(--color_secundario_gris);
+
+  @media screen and(min-width:37.5rem) {
+    font-size: var(--tamano_subtitulo);
+    line-height: var(--interlineado_subtitulo);
+  }
+}
+.subtitulo_2 {
+  font-size: var(--tamano_subtitulo_2);
+  line-height: var(--interlineado_subtitulo_2);
+  text-align: center;
+  color: var(--color_secundario_gris_400);
+  @media screen and(min-width:37.5rem) {
+    font-size: var(--tamano_subtitulo_2);
+    line-height: var(--interlineado_subtitulo_2);
+  }
+}
