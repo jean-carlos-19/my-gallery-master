@@ -1,4 +1,4 @@
-# Pagina Consultoria de Interiores
+# Pagina de Galeria
 _Reto:  rear la página de mi equipo siguiendo el diseño propuesto por [DevChallenges](https://www.figma.com/file/F8d1qJsorEdY47N74HLxQ4). La página debe ser responsiva. No se debe mirar la solución existente. Cumpla con las historias de usuario que aparecen a continuación:_
 
 ### Historias de Usuario :man:
@@ -7,7 +7,7 @@ _Reto:  rear la página de mi equipo siguiendo el diseño propuesto por [DevChal
 
 ### Previsualización :eye:
 
-![imagen]()
+![imagen](https://github.com/jean-carlos-19/my-gallery-master/blob/master/captura/escritorio.png)
 
 ### Demo :eyes:
 _Puedes encontrar la implementacion del desafio [aqui](https://piguavejc-team-page.onrender.com/)_
